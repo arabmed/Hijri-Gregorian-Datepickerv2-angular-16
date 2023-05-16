@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "module": "es2020",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ES2022",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "ES2022",
+      "dom"
+    ],
+    "paths": {
+      "ngx-hijri-gregorian-datepicker": [
+        "dist/ngx-hijri-gregorian-datepicker"
+      ],
+      "ngx-hijri-gregorian-datepicker/*": [
+        "dist/ngx-hijri-gregorian-datepicker/*"
+      ]
+    }
+  }
+}

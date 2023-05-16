@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var DateType = /** @class */function () {\n  function DateType() {}\n  DateType.Hijri = 1;\n  DateType.Gregorian = 2;\n  return DateType;\n}();","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
