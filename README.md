@@ -1,12 +1,12 @@
 
 # Hijri Gregorian Datepicker
 
-* Angular datepicker based on [ng-bootstrap](https://ng-bootstrap.github.io/#/components/datepicker/overview) that supports **Gregorian** and **Hijri** calendars. 
+* Lightweight **Angular** datepicker based on [ng-bootstrap](https://ng-bootstrap.github.io/#/components/datepicker/overview) that supports **Gregorian** and **Hijri** calendars. 
 * Provides ability to swap between **Gregorian** and **Hijri** calendars 
 * Converting selected date back and forth when changing calendar type.
 * Provides service `DateFormatterService` to help converting date formats in both calendars types.
-* It is developed using  `Angular >=7.0.0`  and its newly introduced  `ng g library`  schematics.
-* Now It supports Angular v12.
+* It is developed using  `Angular >=16.0.0`  and its newly introduced  `ng g library`  schematics.
+* This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
 
 ## Examples/Demo
 Online demo can be found [here](https://eslamelmadny.github.io/HijriGregorianDatepicker/) 
@@ -57,7 +57,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Dependencies
 
-Make sure that `@ng-bootstrap/ng-bootstrap` and  `bootstrap` with appropriate versions to angular 7.
+Make sure that `@ng-bootstrap/ng-bootstrap` and  `bootstrap` with appropriate versions to angular 16.
 
 ## Usage
 
@@ -96,20 +96,21 @@ constructor()  {}
 
 ## Utilities
 
->DateFormatterService
+> **DateFormatterService**
 
 | Method|  Parameter | Return| Description |
 |--|--|--| -- |
-|ToBindableHijroDate(hijriDate)|hijriDate:string|NgbDate| Recive hijri date came from server as a string and convert to `NgbDate` to be binded to the component. Defualt format `(iD/iM/iYY HH:mm:ss tt)`|
-|ToBindableHijroDateUsingFormat(hijriDate,format)|hijriDate:string, format:string|NgbDate| Same as prev method with ability to provide format of receiving date. |
+|ToGregorianDateStruct()|gregorianDate: string, format:string|NgbDate|Convert string gregorian date to date struct. |
+|ToHijriDateStruct()|hijriDate:string, format:string|NgbDate| Convert string hijri date to date struct.  |
 |ToHijri(date)|NgbDateStruct|NgbDateStruct| Convert Gregorian date struct to Hijri struct.  |
 |ToGregorian(date)|NgbDateStruct|NgbDateStruct|Convert Hijri date struct to Gregorian struct.|
 |ToString(date)|NgbDateStruct|string|Convert date struct to string `dd/mm/yyyy`|
-
+|GetTodayHijri()|--|NgbDateStruct|Get Today's date as hijri.|
+|GetTodayGregorian()|--|NgbDateStruct|Get Today's date as gregorian.|
 
 
 
 
 
 ## Credits
-This project is based on  [ng-bootstrap](https://ng-bootstrap.github.io/#/components/datepicker/overview) , [moment](https://momentjs.com/) , [moment Hijri](https://github.com/xsoh/moment-hijri) .
+This project is based on  [ng-bootstrap](https://ng-bootstrap.github.io/#/components/datepicker/overview) , [moment](https://momentjs.com/) , [moment Hijri](https://github.com/xsoh/moment-hijri) , [ngx-hijri-gregorian-datepicker](https://github.com/EslamElmadny/HijriGregorianDatepicker.git).

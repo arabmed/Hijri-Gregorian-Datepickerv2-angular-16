@@ -5,8 +5,8 @@
 * Provides ability to swap between **Gregorian** and **Hijri** calendars 
 * Converting selected date back and forth when changing calendar type.
 * Provides service `DateFormatterService` to help converting date formats in both calendars types.
-* It is developed using  `Angular >=7.0.0`  and its newly introduced  `ng g library`  schematics.
-* This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+* It is developed using  `Angular >=16.0.0`  and its newly introduced  `ng g library`  schematics.
+* This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
 
 ## Examples/Demo
 Online demo can be found [here](https://eslamelmadny.github.io/HijriGregorianDatepicker/) 
@@ -57,7 +57,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Dependencies
 
-Make sure that `@ng-bootstrap/ng-bootstrap` and  `bootstrap` with appropriate versions to angular 7.
+Make sure that `@ng-bootstrap/ng-bootstrap` and  `bootstrap` with appropriate versions to angular 16.
 
 ## Usage
 
@@ -113,4 +113,4 @@ constructor()  {}
 
 
 ## Credits
-This project is based on  [ng-bootstrap](https://ng-bootstrap.github.io/#/components/datepicker/overview) , [moment](https://momentjs.com/) , [moment Hijri](https://github.com/xsoh/moment-hijri) .
+This project is based on  [ng-bootstrap](https://ng-bootstrap.github.io/#/components/datepicker/overview) , [moment](https://momentjs.com/) , [moment Hijri](https://github.com/xsoh/moment-hijri) , [ngx-hijri-gregorian-datepicker](https://github.com/EslamElmadny/HijriGregorianDatepicker.git).
